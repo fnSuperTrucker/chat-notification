@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Sound Settings</title>
+    <style>
+        body {
+            background-color: #404040;  /* Dark gray */
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            margin: 0;
+            width: 200px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="range"] {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <label for="volumeSlider">Notification Volume:</label>
+    <input type="range" id="volumeSlider" min="0" max="100" value="50">
+    <script src="popup.js"></script>
+</body>
+</html>

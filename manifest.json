@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Rumble Chat Sound",
+    "version": "1.0",
+    "description": "Plays a bing sound and shows notification for new chat messages",
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://rumble.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["bing.mp3"],
+            "matches": ["*://rumble.com/*"]
+        }
+    ]
+}
